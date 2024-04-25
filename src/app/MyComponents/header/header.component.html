@@ -1,0 +1,38 @@
+<header>
+    <div class="container">
+        <div class="logo-class">
+            <img src="../../../assets/Icon.jpg" alt="" srcset="">
+            <a routerLink="/dashboard" class="logo">Foodie Bites</a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a routerLink="/">Log Out</a>
+                </li>
+
+                <li class="menu-container">
+                    <a routerLink="/dashboard" href="">Dashboard</a>
+
+                    <div class="menu">
+                        <a routerLink="/Profile" href="">
+                            Profile
+                        </a>
+                        <a routerLink="/order" href="">
+                            Order
+                        </a>
+                        <a routerLink="/">
+                            Log Out
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <a routerLink = "/cart-page">Cart<span *ngIf="cartQuantity">
+                        {{cartQuantity}}
+                    </span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
